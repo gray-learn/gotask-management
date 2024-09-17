@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management System</title>
+    <script src="https://unpkg.com/htmx.org@1.9.2"></script>
+    <link rel="stylesheet" href="/web/static/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Task Management System</h1>
+        <nav>
+            <!-- <a href="/">Home</a> -->
+            <a href="/tasks">Tasks</a>
+            <a href="/tasks/create">Create Task</a>
+        </nav>
+    </header>
+    <main>
+        {{template "content" .}}
+    </main>
+    <footer>
+        <p>&copy; 2024 Task Management System</p>
+    </footer>
+    <script src="/web/static/js/app.js"></script>
+</body>
+
+</html>
